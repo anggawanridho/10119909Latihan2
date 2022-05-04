@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bloodtype">
+        <item>Blood Type</item>
+        <item>Blood A</item>
+        <item>Blood B</item>
+        <item>Blood AB</item>
+        <item>Blood O</item>
+    </string-array>
+</resources>
