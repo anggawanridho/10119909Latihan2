@@ -19,18 +19,21 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/dimen4"
-                android:onClick="back"
-                android:src="@drawable/ic_header_back" />
+                android:layout_marginStart="@dimen/dimen4"
+                android:src="@drawable/ic_header_back"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="back_icon"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginStart="@dimen/dimen30"
                 android:text="Register"
                 android:textColor="@color/white"
                 android:textSize="@dimen/font18" />
@@ -49,8 +52,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/hex"
-                android:text="Username"
-                android:textColor="@color/hex"/>
+                android:hint="Username"
+                android:inputType="text"
+                android:textColorHint="@color/hex"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -58,8 +62,8 @@
                 android:layout_marginTop="@dimen/dimen4"
                 android:backgroundTint="@color/hex"
                 android:inputType="textEmailAddress"
-                android:text="Email"
-                android:textColor="@color/hex"/>
+                android:hint="Email"
+                android:textColorHint="@color/hex"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -67,7 +71,7 @@
                 android:layout_marginTop="@dimen/dimen4"
                 android:backgroundTint="@color/hex"
                 android:inputType="phone"
-                android:text="Phone Number"
+                android:hint="Phone Number"
                 android:textColor="@color/hex"/>
 
             <RadioGroup
@@ -82,7 +86,7 @@
                     android:layout_marginHorizontal="@dimen/dimen25"
                     android:layout_weight="50"
                     android:buttonTint="@color/hex"
-                    android:text="Male"
+                    android:hint="Male"
                     android:textColor="@color/hex"/>
                 <RadioButton
                     android:id="@+id/female"
@@ -91,7 +95,7 @@
                     android:layout_marginHorizontal="@dimen/dimen25"
                     android:layout_weight="50"
                     android:buttonTint="@color/hex"
-                    android:text="Female"
+                    android:hint="Female"
                     android:textColor="@color/hex"/>
             </RadioGroup>
 
@@ -120,7 +124,7 @@
                 android:layout_marginTop="@dimen/dimen4"
                 android:backgroundTint="@color/hex"
                 android:inputType="textVisiblePassword"
-                android:text="Password"
+                android:hint="Password"
                 android:textColor="@color/hex"/>
 
             <EditText
@@ -129,7 +133,7 @@
                 android:layout_marginTop="@dimen/dimen4"
                 android:backgroundTint="@color/hex"
                 android:inputType="textVisiblePassword"
-                android:text="Retype Password"
+                android:hint="Retype Password"
                 android:textColor="@color/hex"/>
 
             <RadioGroup
@@ -170,7 +174,7 @@
                 android:layout_marginTop="@dimen/dimen4"
                 android:backgroundTint="@color/hex"
                 android:inputType="textPostalAddress"
-                android:text="Home Address"
+                android:hint="Home Address"
                 android:textColor="@color/hex"/>
 
             <EditText
@@ -178,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen4"
                 android:backgroundTint="@color/hex"
-                android:text="Default Location"
+                android:hint="Default Location"
                 android:textColor="@color/hex"/>
 
             <LinearLayout
@@ -200,11 +204,11 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/blue_border"
                 android:layout_marginTop="@dimen/dimen4"
-                android:onClick="register"
                 android:textColor="@color/picton_blue"
                 android:text="REGISTER"/>
 

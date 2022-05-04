@@ -18,6 +18,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Register"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".AlmostThere"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".UserHome"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".VerifyAccount"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
