@@ -6,7 +6,10 @@
         <entry key="app/src/main/res/drawable/blue_border.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/button_border.xml" value="0.211" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.262720371300066" />
+        <entry key="app/src/main/res/layout/almost_there.xml" value="0.33" />
         <entry key="app/src/main/res/layout/register.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/user_home.xml" value="0.45919778699861685" />
+        <entry key="app/src/main/res/layout/verify_account.xml" value="0.32407407407407407" />
       </map>
     </option>
   </component>

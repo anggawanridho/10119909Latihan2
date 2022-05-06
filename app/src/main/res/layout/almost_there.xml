@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/picton_blue"
+    tools:context=".AlmostThere">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Almost There"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="150dp">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you for registering with us. One more step, you need to check your email to activate your account"
+                android:gravity="center"
+                android:textSize="@dimen/dimen12"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/white"
+                android:paddingHorizontal="95dp">
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/button_border"
+                android:textColor="@color/white"
+                android:text="VERIFY"
+                android:fontFamily="@font/roboto_medium"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
